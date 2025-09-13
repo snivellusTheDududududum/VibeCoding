@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuit Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="circuit">
+        <div class="battery">
+            <div class="terminal positive" data-terminal="battery-pos"></div>
+            <div class="battery-body">+</div>
+            <div class="terminal negative" data-terminal="battery-neg"></div>
+        </div>
+        
+        <div class="bulb" data-bulb="1">
+            <div class="terminal" data-terminal="bulb1-left"></div>
+            <div class="bulb-body"></div>
+            <div class="terminal" data-terminal="bulb1-right"></div>
+        </div>
+        
+        <div class="bulb" data-bulb="2">
+            <div class="terminal" data-terminal="bulb2-left"></div>
+            <div class="bulb-body"></div>
+            <div class="terminal" data-terminal="bulb2-right"></div>
+        </div>
+        
+        <div class="controls">
+            <button onclick="clearConnections()">Clear All</button>
+            <div class="status">Click terminals to connect wires</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
